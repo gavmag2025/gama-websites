@@ -274,6 +274,25 @@ img, svg { max-width: 100%; }
 .proof-facts { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 12px; }
 .proof-facts li { padding-top: 12px; border-top: 1px solid #3A3E47; color: var(--white); font-weight: 600; }
 
+/* Live projects list (inside the dark proof section) */
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.proj { margin-top: 88px; }
+.proj-title { color: var(--white); font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 8px; }
+.proj-intro { color: #D5D9E2; margin-bottom: 28px; max-width: 38rem; }
+.proj-list { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--white); }
+.proj-row { display: grid; grid-template-columns: 0.9fr 1.3fr 0.9fr; gap: 32px; align-items: center; padding: 26px 0; border-bottom: 1px solid #3A3E47; }
+.proj-row p { margin: 0; color: #D5D9E2; }
+.proj-row .proj-name { font-family: var(--display); font-weight: 800; font-size: 1.4rem; line-height: 1.15; color: var(--white); }
+.proj-row .proj-type { font-size: 0.875rem; font-weight: 600; color: #B7BDC9; margin-top: 4px; }
+.proj-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--white); font-weight: 700; word-break: break-word; }
+.proj-link:hover { color: var(--orange); }
+.proj-status { font-size: 0.9375rem; font-weight: 600; color: #B7BDC9; }
+.proof p a { color: var(--white); font-weight: 600; }
+@media (max-width: 980px) {
+  .proj-row { grid-template-columns: 1fr; gap: 10px; }
+  .proj { margin-top: 64px; }
+}
+
 /* Glossary: committed blue field */
 .glossary { background: var(--blue); color: var(--white); padding: 96px 0; }
 .glossary h2 { color: var(--white); }

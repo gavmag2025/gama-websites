@@ -7,3 +7,11 @@ GaMa (Gavin Magid Web and Online Marketing Solutions) is based in Johannesburg a
 ## Pages
 - [Home](https://www.gamaonlinemarketing.co.za/): services, process, FAQ, contact
 - [Blog](https://www.gamaonlinemarketing.co.za/blog/): plain-English guides on websites, marketing and AI for small business
+
+## Live projects
+- [Joburg North Psychology](https://joburgnorthpsychology.co.za): practice website and admin backend for a clinical psychologist (client project)
+- [BuySave](https://buysave.co.za): online store for mini PCs and technology deals
+- [BuySave Shop](https://shop.buysave.co.za): custom storefront for mini PCs and laptops with Rand pricing
+- [ProblemSolved](https://problemsolved.org.za): South African consumer dispute tracker
+- [ZAVoiceAI](https://zavoiceai.online): AI call screening for South African mobile numbers
+- [ZaCart](https://zacart.online): grocery price comparison across South African stores
