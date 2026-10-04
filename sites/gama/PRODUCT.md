@@ -16,7 +16,7 @@ Self-employed professionals and small business owners in South Africa who are ex
 
 ## Product Purpose
 
-GaMa Online Marketing is a solo/small agency (run by Gavin Magid, Johannesburg) selling four services, in this priority order: (1) Android app development, (2) AI-powered business software (internal tools, dashboards, booking systems, automations), (3) online marketing with both SEO and GEO (generative engine optimization — getting mentioned by ChatGPT/AI Overviews, not just ranked in Google), and (4) website design, still offered but no longer the lead offer. The site's job is to get a skeptical, non-technical professional or growing business to believe this is credible and premium, understand AI-built software isn't corner-cutting, and book a free intro call.
+GaMa – Gavin Magid Web and Online Marketing Solutions is a solo/small agency (run by Gavin Magid, Johannesburg) selling four services, in this priority order: (1) Android app development, (2) AI-powered business software (internal tools, dashboards, booking systems, automations), (3) online marketing with both SEO and GEO (generative engine optimization — getting mentioned by ChatGPT/AI Overviews, not just ranked in Google), and (4) website design, still offered but no longer the lead offer. The site's job is to get a skeptical, non-technical professional or growing business to believe this is credible and premium, understand AI-built software isn't corner-cutting, and book a free intro call.
 
 **Positioning pivot (2026-09-10):** originally launched website-first; Gavin explicitly repositioned it to lead with apps/AI software/marketing and demote websites to "still offered" rather than the headline service. Any new copy, service lists, or nav items should keep that order: apps and AI software and SEO/GEO first, websites last but present.
 
@@ -34,7 +34,7 @@ No backend yet — contact form currently opens a mailto: draft (placeholder, no
 
 ## Brand Commitments
 
-Name: "GaMa Online Marketing." Founder: Gavin Magid. Based in Johannesburg, South Africa. Voice: plain English, first-person, no jargon, no hype, deliberately conversational rather than "corporate."
+Name: "GaMa – Gavin Magid Web and Online Marketing Solutions" (short form "GaMa"). Founder: Gavin Magid. Based in Johannesburg, South Africa. Voice: plain English, first-person, no jargon, no hype, deliberately conversational rather than "corporate."
 
 ## Evidence on Hand
 

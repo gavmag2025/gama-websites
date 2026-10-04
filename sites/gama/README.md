@@ -1,4 +1,4 @@
-# GaMa Online Marketing — website
+# GaMa – Gavin Magid Web and Online Marketing Solutions — website
 
 Your new site. Plain HTML/CSS, no build step, no dependencies to install or break.
 

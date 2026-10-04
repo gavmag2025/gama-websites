@@ -1,6 +1,6 @@
 # GaMa websites
 
-Monorepo for GaMa Online Marketing (Johannesburg, South Africa).
+Monorepo for GaMa – Gavin Magid Web and Online Marketing Solutions (Johannesburg, South Africa).
 
 - `sites/gama/` is the agency site: static HTML/CSS/JS, no build step, target Cloudflare Pages. See `sites/gama/PRODUCT.md` for positioning and `sites/gama/README.md` for notes.
 - `starter/` and `scripts/` are reserved for a reusable template and a scaffold script for end-customer sites (not built yet).
