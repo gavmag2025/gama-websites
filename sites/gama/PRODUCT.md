@@ -16,13 +16,13 @@ Self-employed professionals and small business owners in South Africa who are ex
 
 ## Product Purpose
 
-GaMa – Gavin Magid Web and Online Marketing Solutions is a solo/small agency (run by Gavin Magid, Johannesburg) selling four services, in this priority order: (1) Android app development, (2) AI-powered business software (internal tools, dashboards, booking systems, automations), (3) online marketing with both SEO and GEO (generative engine optimization — getting mentioned by ChatGPT/AI Overviews, not just ranked in Google), and (4) website design, still offered but no longer the lead offer. The site's job is to get a skeptical, non-technical professional or growing business to believe this is credible and premium, understand AI-built software isn't corner-cutting, and book a free intro call.
+GaMa – Gavin Magid Web and Online Marketing Solutions is a solo/small agency (run by Gavin Magid, Johannesburg) selling four services, in this order: (1) websites and design, (2) online marketing with both SEO and GEO (generative engine optimization: getting mentioned by ChatGPT and AI Overviews, not just ranked in Google), (3) Android app development, and (4) AI-powered business software (internal tools, dashboards, booking systems, automations). The site's job is to get a skeptical, non-technical professional or growing business to believe this is credible and premium, understand AI-built software isn't corner-cutting, and book a free intro call.
 
-**Positioning pivot (2026-09-10):** originally launched website-first; Gavin explicitly repositioned it to lead with apps/AI software/marketing and demote websites to "still offered" rather than the headline service. Any new copy, service lists, or nav items should keep that order: apps and AI software and SEO/GEO first, websites last but present.
+**Service order (set by Gavin 2026-10-04):** websites, online marketing (SEO and GEO), Android apps, AI software. This replaces the 2026-09-10 order that led with apps. Any new copy, service lists or nav items should keep the new order.
 
 ## Positioning
 
-Most agencies serving this audience either look like generic corporate consultancies (stock photos, jargon) or like generic AI-generated startup templates (gradient hero, pill buttons, icon-grid features) — both read as interchangeable. GaMa's actual differentiator: same-day-to-weeks delivery on custom software (apps and internal tools) that would traditionally cost R100k+ and take months, explained in plain English, by someone who demonstrably used this exact method to solve a real problem (see Evidence below), plus getting found in both traditional search and AI-driven search, not just claims to offer any of it.
+Most agencies serving this audience either look like generic corporate consultancies (stock photos, jargon) or like generic AI-generated startup templates (gradient hero, pill buttons, icon-grid features) — both read as interchangeable. GaMa's actual differentiator: much faster delivery of custom software (apps and internal tools) than a traditional build, explained in plain English, by someone who demonstrably used this exact method to solve a real problem (see Evidence below), plus getting found in both traditional search and AI-driven search, not just claims to offer any of it.
 
 ## Operating Context
 
@@ -38,7 +38,7 @@ Name: "GaMa – Gavin Magid Web and Online Marketing Solutions" (short form "GaM
 
 ## Evidence on Hand
 
-Real (anonymized) case study: built a client/billing dashboard (Google Sheets + Retool) for a private psychology practice in Johannesburg, replacing three disconnected tools and paper records. This is genuine, not illustrative — it should be treated as real proof, not a placeholder. No other client case studies, testimonials, or logos exist yet; do not fabricate additional ones.
+Real project: a custom admin dashboard for a private psychology practice, built on Retool with Google Sheets as the data store, tracking clients, sessions, invoices and payments. Keep the practice anonymous. No testimonial, metrics, client logos or other case studies exist. Earlier site copy contained a quote and figures ("4 tools to 1", "R0 extra subscriptions", "Days") that were invented by the drafting assistant; they were removed on 2026-10-04 and must not return unless Gavin supplies real ones. The blog posts were also drafted by the assistant and contain unverified details (weekend build time, cost comparison, tools replaced) that Gavin must confirm or edit before publishing.
 
 ## Product Principles
 
