@@ -1,29 +1,30 @@
-# GaMa – Gavin Magid Web and Online Marketing Solutions — website
+# GaMa – Gavin Magid Web and Online Marketing Solutions: website
 
-Your new site. Plain HTML/CSS, no build step, no dependencies to install or break.
+React + GSAP + Lenis, built with Vite. The homepage is prerendered to plain HTML at build time, so Google and AI crawlers see the full page without running JavaScript. The blog is static HTML in `public/blog/`.
 
-## What's here
-- `index.html` — the main site (one page: hero, services, AI explainer, process, case study, blog teaser, FAQ, contact)
-- `blog/` — the blog (index + 3 starter posts)
-- `css/styles.css` — all the styling (colours, fonts, spacing) in one file
-- `js/main.js` — mobile menu + contact form behaviour
-- `robots.txt`, `sitemap.xml`, `llms.txt` — so Google (and AI search tools) can find and understand the site
+## Run it
+```bash
+npm install
+npm run dev      # dev server on http://localhost:8788
+npm run build    # production build into dist/ (client bundle + prerendered index.html)
+npm run preview  # serve the built dist/ on http://localhost:8789
+```
 
-## Buying a domain
-Go with `.co.za` for South African trust signals, or `.com` if you want it to read more international. Try to get something close to `gamaonlinemarketing.co.za` — check availability on a registrar like Domains.co.za, Afrihost, or Cloudflare Registrar. Once you own it, tell me and I'll wire it up.
+## Where things are
+- `src/components/` sections of the homepage (Hero, Work, Process, Contact, and the rest in Sections.jsx)
+- `src/content.js` the text for services, projects, FAQ, steps and blog teasers. Most copy edits happen here.
+- `src/motion.js` shared GSAP setup. Every animation sits inside a "no reduced motion" check, so visitors who ask for less motion get a static page.
+- `src/motion.css` motion-specific styles, plus the failsafe that reveals the hero if scripts fail
+- `public/css/styles.css` the design system, shared by the homepage and the blog
+- `public/blog/`, `public/robots.txt`, `public/sitemap.xml`, `public/llms.txt` copied to the site as-is
+- `PRODUCT.md` positioning, audience and what evidence may be claimed
 
-## Editing text yourself later
-Every page is plain HTML — open the file in any text editor, find the sentence in plain English, change it, save. Nothing to compile. If that ever feels risky, just ask me.
+## Deploying (Cloudflare Pages, not set up yet)
+Create a Pages project from the GitHub repo with: root directory `sites/gama`, build command `npm run build`, output directory `dist`. Nothing is deployed and no domain is connected yet.
 
-## Contact form (important — do this before going live)
-Right now the contact form opens the visitor's email app pre-filled with their message (works everywhere, zero setup, but relies on them having an email client configured). Before launch, I'd recommend wiring it to a proper form backend (e.g. Cloudflare Pages Functions, or a free tier of Web3Forms/Formspree) so submissions land straight in your inbox even from mobile. Say the word and I'll set it up.
-
-## Deploying (Cloudflare Pages — free)
-This site is ready for Cloudflare Pages. Once you're ready to go live, I can either:
-1. Connect it to a GitHub repo and deploy through the Cloudflare dashboard (recommended — auto-deploys every time we update the site), or
-2. Run `npx wrangler pages deploy .` from this folder for a one-off deploy.
-
-I won't push anything live without checking with you first.
-
-## The blog / ongoing SEO
-Per your call: new posts land as **drafts for your review**, not auto-published. I'll set up a recurring task that researches a topic, writes a post in this same plain-spoken voice, and lets you know it's ready to check — nothing goes live until you say so.
+## Things to replace before launch
+- The "GM" monogram in the About section: add a real photo as `public/images/gavin.jpg` and swap the marked line in `src/components/Sections.jsx`.
+- A real quote from the practice owner (never invent testimonials). See the comment in `src/components/Work.jsx`.
+- The contact form currently opens the visitor's email app with the message filled in. A real form backend (for example a Cloudflare Pages Function) should replace it.
+- The domain `gamaonlinemarketing.co.za` is a placeholder in the page tags, sitemap, robots.txt, llms.txt and contact email.
+- The three blog posts were drafted by an assistant and contain unverified details. Check them before publishing.

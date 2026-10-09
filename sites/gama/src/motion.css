@@ -1,0 +1,89 @@
+/* Motion layer. Base design lives in /css/styles.css (shared with the blog).
+   Everything here is progressive: with scripts off or reduced motion, the page is simply static. */
+
+:root { --ease-out: cubic-bezier(0.16, 1, 0.3, 1); }
+
+section[id], main { scroll-margin-top: 88px; }
+
+/* Lenis owns smoothing when it is running; the browser's own smooth scroll would fight it. */
+html.lenis, html.lenis body { height: auto; scroll-behavior: auto !important; }
+
+/* Hero headline: each word sits in a mask and rises into view */
+.hl-mask { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: 0.12em; margin-bottom: -0.12em; }
+.hl-word { display: inline-block; }
+
+/* Pre-hide the hero only when motion is allowed and the animation has not taken over yet.
+   If scripts fail, the failsafe reveals everything after 3.5s so content is never lost. */
+html.js-motion:not(.motion-ready) .hl-word { transform: translateY(112%); }
+html.js-motion:not(.motion-ready) .hero .lede,
+html.js-motion:not(.motion-ready) .hero-cta,
+html.js-motion:not(.motion-ready) .hero-note,
+html.js-motion:not(.motion-ready) .hero .browser,
+html.js-motion:not(.motion-ready) .hero .phone { opacity: 0; }
+html.js-motion:not(.motion-ready) .hl-word,
+html.js-motion:not(.motion-ready) .hero .lede,
+html.js-motion:not(.motion-ready) .hero-cta,
+html.js-motion:not(.motion-ready) .hero-note,
+html.js-motion:not(.motion-ready) .hero .browser,
+html.js-motion:not(.motion-ready) .hero .phone { animation: gama-failsafe 0.01s linear 3.5s forwards; }
+@keyframes gama-failsafe { to { opacity: 1; transform: none; } }
+
+/* Reading progress */
+.progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: var(--orange);
+  transform: scaleX(0);
+  transform-origin: left;
+  z-index: 70;
+  pointer-events: none;
+}
+
+/* Header tucks away while reading down, returns on any upward scroll */
+.site-header { transition: transform 320ms var(--ease-out); }
+.site-header.is-hidden { transform: translateY(-100%); }
+.site-header.is-hidden:focus-within { transform: none; }
+
+/* Booking app states */
+.phone-chips span, .phone-slots span { transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease; }
+.phone-cta { transition: background-color 250ms ease, color 250ms ease; }
+.phone-cta.is-idle { background: var(--line); color: var(--muted); }
+.phone-cta.is-done { background: var(--green-ink); }
+.pill { transition: background-color 300ms ease, color 300ms ease; }
+
+/* Services: the rule under each row draws in (the row's own border is replaced by this line) */
+.svc-row { position: relative; border-bottom: 0; }
+.svc-row::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  background: var(--ink);
+  transform: scaleX(var(--draw, 1));
+  transform-origin: left;
+}
+
+/* Process: scroll fills a line and lights each step as it is reached (desktop only, armed by script) */
+.steps { position: relative; }
+.steps-progress {
+  display: none;
+  position: absolute;
+  top: -3px; left: 0; right: 0;
+  height: 4px;
+  background: var(--orange);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.steps.is-armed .steps-progress { display: block; }
+.step-num { transition: color 300ms ease; }
+.steps.is-armed .step:not(.reached) .step-num { color: var(--line-strong); }
+
+/* Form feedback */
+.field-error { margin: 6px 0 0; font-size: 0.9375rem; font-weight: 600; color: #B00020; }
+.form-field input[aria-invalid="true"], .form-field textarea[aria-invalid="true"] { border-color: #B00020; }
+.form-status { margin: 14px 0 0; min-height: 1.5em; font-weight: 600; color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header { transition: none; }
+}

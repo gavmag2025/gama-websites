@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-static HTML/CSS/JS, no framework, no build step (user's explicit choice over Wix, accepting that future edits go through Claude rather than drag-and-drop)
+React 19 + GSAP + Lenis on Vite, with the homepage prerendered to static HTML at build time for SEO and GEO. Blog posts are static HTML in public/blog. Gavin asked for this stack on 2026-10-09 (previously plain static HTML, by his earlier choice over Wix).
 
 ## Users
 
