@@ -76,19 +76,19 @@ export const steps = [
 
 export const posts = [
   {
-    href: '/blog/what-is-vibe-coding.html',
+    href: '/blog/what-is-vibe-coding',
     meta: '12 Aug 2026 · 6 min read',
     title: 'What is "vibe coding" anyway? A plain-English guide',
     text: 'Cutting through the buzzword to what it actually means for your business.',
   },
   {
-    href: '/blog/website-vs-social-media.html',
+    href: '/blog/website-vs-social-media',
     meta: '12 Aug 2026 · 5 min read',
     title: 'Why your firm needs more than a Facebook page',
     text: "Social media is rented land. Here's why you still need a website you own.",
   },
   {
-    href: '/blog/ai-built-client-portal.html',
+    href: '/blog/ai-built-client-portal',
     meta: '12 Aug 2026 · 7 min read',
     title: 'I built a client portal in a weekend using AI',
     text: "What surprised me, what I'd never trust AI to do alone, and what it cost.",

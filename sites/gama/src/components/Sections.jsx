@@ -64,7 +64,7 @@ export function Glossary() {
           <h2 id="glossary-heading">Two phrases you keep hearing, in plain English</h2>
           <p>AI-built means the software is described in plain English and AI does much of the typing. A person still designs it, tests it and checks that it works for your business.</p>
           <p>GEO is the newer half. People now ask ChatGPT or Google's AI Overview instead of typing a search, and GEO makes sure your business is mentioned in the answer, the way SEO makes sure it shows up in a normal search.</p>
-          <a href="/blog/what-is-vibe-coding.html" className="btn btn-light" style={{ marginTop: 8 }}>Read the full explainer →</a>
+          <a href="/blog/what-is-vibe-coding" className="btn btn-light" style={{ marginTop: 8 }}>Read the full explainer →</a>
         </div>
         <dl>
           {glossary.map(([term, meaning]) => (
